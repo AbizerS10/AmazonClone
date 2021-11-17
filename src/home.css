@@ -5,13 +5,40 @@
   max-width: 1400px;
 }
 .home_row {
-  display: flex;
-  z-index: 1;
+  display: inline-flex !important;
+  width: 49%;
   margin: 0 5px;
+  height: 25rem;
 }
 .home_img {
   width: 100%;
   z-index: -1;
   margin-bottom: -150px;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+@media screen and (max-width: 770px) {
+  .home_row {
+    width: 48%;
+    height: 28rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home {
+    max-width: fit-content;
+    padding-left: 0;
+    margin: 0 0 0 0;
+  }
+  .home_row {
+    margin: 5px 0 0 0;
+    display: block;
+    font-size: small;
+    width: 96%;
+  }
+
+  .home_img {
+    width: 93%;
+    margin: 0;
+    margin-bottom: 0px;
+  }
 }

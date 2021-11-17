@@ -13,3 +13,39 @@
     padding: 10px;
     border-bottom: 1px solid lightgray;
 }
+p{
+    font-weight: 700;
+}
+.checkout_right1{
+    display: none;
+}
+@media screen and (max-width: 480px) {
+ .checkout_right{
+     display: none;
+ }
+    .checkout{
+       height:fit-content; 
+       padding-left: 5px;
+       font-size: small;
+       
+    }
+    .checkout_title {
+        padding: 0;
+        margin: 0px;
+        display: none;
+    }
+    p{
+        font-weight: 650;
+    }
+    .checkout_ad {
+       display: none;
+    }   
+    .checkout_right1{
+        display: inline;
+    }
+    .checkout_left{
+        padding: 0;
+        margin-right: 0;
+        font-size: 13px;
+    }
+}

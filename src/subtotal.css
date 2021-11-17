@@ -26,3 +26,9 @@
     border-color: #a88734 #9c7e31 #846a29;
     color: #111; 
 }
+@media screen and (max-width: 480px) {
+.subtotal{
+    width: 270px;
+    height: 90px;
+}
+}

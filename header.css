@@ -36,13 +36,12 @@
 }
 
 .header__optionLineOne {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .header__optionLineTwo {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 800;
-  text-align: left;
 }
 
 .header__optionBasket {
@@ -69,26 +68,29 @@
   margin-right: 10px;
   color: white;
 }
-@media (max-width: 545px) {
-  .header .temp, .header .prime, .header .form{
-    display: none !important;
-  }
-}
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .header{
     margin: 0 0px 0 0;
     padding: 1px;
   }
   .header__logo{
-  margin: 18px 5px 5px 5px;
-    width: 60px;
+    
+  margin-top: 18px;
+    width: 65px;
   }
   .header__basketCount {
     margin-left: 6px;
     margin-right: 0px;
   }
   .header__search{
-    flex: 0.8;
+    display: none;
+  }
+  .header__option{
+    margin: 0;
+   padding: 10px;
+  }
+  .header__optionLineOne{
+    display: none;
   }
 }

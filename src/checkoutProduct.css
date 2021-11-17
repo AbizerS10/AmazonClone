@@ -25,3 +25,25 @@
     font-size: 17px;
     font-weight: 800;
 }
+
+
+@media screen and (max-width: 480px) {
+    .checkoutProduct{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .checkoutProduct_info {
+        padding-left: 8px;
+        font-size: small;
+    }   
+    .checkoutProduct_img {
+        object-fit: contain;
+    width: 90px;
+    height: 90px;
+    }
+    .checkoutProduct_title {
+        font-size: 12px;
+        font-weight: 670;
+    }
+    
+}
