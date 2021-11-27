@@ -139,7 +139,7 @@ function Header({ setSea }) {
 
       <div className="temp">
         <p style={{ color: "white", padding: "0 0.5rem" }}>
-          {city && city.temp}°C
+          {city? `${city.temp}°C` : "NA"}
         </p>
       </div>
 
