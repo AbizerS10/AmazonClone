@@ -1,7 +1,6 @@
 import React from "react";
 import "./product.css";
 import { useStateValue } from "./StateProvider";
-import StarIcon from '@mui/icons-material/Star';
 
 function Product({id,title,image,price,rating}) {
 
@@ -31,7 +30,7 @@ function Product({id,title,image,price,rating}) {
         </p>
         <div className="product_rating">
           {Array(rating).fill().map((_, i) => {
-              return <StarIcon style={{color: "#FDCC0D", marginTop: "5px"}} />;
+              return <span>⭐</span>;
           })}   
         </div>
       </div>
