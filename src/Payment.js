@@ -6,6 +6,8 @@ import { Link, useHistory } from "react-router-dom";
 // import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 // import CurrencyFormat from "react-currency-format";
  import { getBasketTotal } from "./reducer";
+import Footer from './Footer';
+import Header from './Header';
 // import axios from './axios';
 // import { db } from "./firebase";
 
@@ -17,6 +19,8 @@ function Payment() {
     //  const elements = useElements();
 
     return (
+        <>
+        <Header />
         <div className='payment'>
             <div className='payment__container'>
                 <h1>
@@ -55,16 +59,16 @@ function Payment() {
                     </div>
                     
                 </div>
-            
-               
               
                 {/* Payment section - Payment method */}
                  
             </div>
             <p className='p1'> Subtotal (
-                        {basket?.length} items):    ${getBasketTotal(basket)}</p>
+                        {basket?.length} items):    Rs.{getBasketTotal(basket)}</p>
         </div>
+        <Footer />
+        </>
     )
-}
+};
 
 export default Payment

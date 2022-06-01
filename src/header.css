@@ -73,6 +73,9 @@
   .header .temp, .header .prime, .header .form{
     display: none !important;
   }
+  .header .header__optionLineOne {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
